@@ -32,7 +32,8 @@ release = '0.0.20'
 # ones.
 extensions = [
     'recommonmark',
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'notfound.extension'
 ]
 
 source_suffix = ['.rst', '.md']
@@ -45,6 +46,17 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# sphinx-notfound-page
+# https://github.com/readthedocs/sphinx-notfound-page
+notfound_context = {
+    'title': 'Page moved',
+    'body': '''
+    <h1>We have moved!</h1>
+    <p>The elastic-blast documentation has moved to URL HERE.</p>
+    <!--<p>Try using the search box or go to the homepage.</p>-->
+    ''',
+}
+notfound_no_urls_prefix = True
 
 # -- Options for HTML output -------------------------------------------------
 
