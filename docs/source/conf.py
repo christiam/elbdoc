@@ -38,6 +38,12 @@ extensions = [
 
 source_suffix = ['.rst', '.md']
 
+#sidebar_width = 0
+html_theme_options = {
+    # Disable showing the sidebar. Defaults to 'false'
+    'nosidebar': True
+}
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
