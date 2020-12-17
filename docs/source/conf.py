@@ -58,8 +58,9 @@ notfound_context = {
     'title': 'Page moved',
     'body': '''
     <h1>We have moved!</h1>
-    <p>The elastic-blast documentation has moved to URL HERE.</p>
-    <!--<p>Try using the search box or go to the homepage.</p>-->
+    <p>Please update your bookmarks!</p>
+    <p>The documentation can now be found here:</p>
+    <p>https://blast.ncbi.nlm.nih.gov/doc/elastic-blast</p>
     ''',
 }
 notfound_no_urls_prefix = True
