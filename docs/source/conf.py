@@ -60,7 +60,8 @@ notfound_context = {
     <h1>We have moved!</h1>
     <p>Please update your bookmarks!</p>
     <p>The documentation can now be found here:</p>
-    <p>https://blast.ncbi.nlm.nih.gov/doc/elastic-blast</p>
+    <p><a href="https://blast.ncbi.nlm.nih.gov/doc/elastic-blast">
+    https://blast.ncbi.nlm.nih.gov/doc/elastic-blast</a></p>
     ''',
 }
 notfound_no_urls_prefix = True
