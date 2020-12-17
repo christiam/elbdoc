@@ -32,10 +32,17 @@ release = '0.0.20'
 # ones.
 extensions = [
     'recommonmark',
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'notfound.extension'
 ]
 
 source_suffix = ['.rst', '.md']
+
+#sidebar_width = 0
+html_theme_options = {
+    # Disable showing the sidebar. Defaults to 'false'
+    'nosidebar': True
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -45,6 +52,19 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# sphinx-notfound-page
+# https://github.com/readthedocs/sphinx-notfound-page
+notfound_context = {
+    'title': 'Page moved',
+    'body': '''
+    <h1>We have moved!</h1>
+    <p>Please update your bookmarks!</p>
+    <p>The documentation can now be found here:</p>
+    <p><a href="https://blast.ncbi.nlm.nih.gov/doc/elastic-blast">
+    https://blast.ncbi.nlm.nih.gov/doc/elastic-blast</a></p>
+    ''',
+}
+notfound_no_urls_prefix = True
 
 # -- Options for HTML output -------------------------------------------------
 
